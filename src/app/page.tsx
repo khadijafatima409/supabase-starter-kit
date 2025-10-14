@@ -43,24 +43,6 @@ export default function Home() {
           Place Bid
         </button>
       </div>
-
-      {/* Bids List */}
-      <div className="bg-white shadow-md rounded-2xl p-4 w-full max-w-md">
-        <h2 className="text-xl font-semibold mb-3">Recent Bids</h2>
-        <ul className="space-y-2">
-          {bids.map((bid) => (
-            <li
-              key={bid.id}
-              className="border p-2 rounded-lg flex justify-between"
-            >
-              <span>💰 {bid.amount}</span>
-              <span className="text-sm text-gray-500">
-                {bid.user} | {bid.created_at}
-              </span>
-            </li>
-          ))}
-        </ul>
-      </div>
     </div>
   );
 }
